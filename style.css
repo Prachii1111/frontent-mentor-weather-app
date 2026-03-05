@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --regular-font: "DM Sans", sans-serif;
+    --heading-font: "Bricolage Grotesque", sans-serif;
+}
+
