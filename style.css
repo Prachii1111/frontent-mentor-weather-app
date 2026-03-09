@@ -9,3 +9,191 @@
     --heading-font: "Bricolage Grotesque", sans-serif;
 }
 
+.container {
+    background-color: hsl(243, 96%, 9%);
+    color: hsl(0, 0%, 100%);
+    border: 1px solid yellow;
+    padding: 10px;
+}
+
+.header {
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo {
+    /* border: 1px solid hotpink; */
+}
+
+.logo img {
+    width: 180px;
+}
+
+.units-dropdown {
+    /* border: 1px solid rgb(12, 241, 88); */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dropbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: hsl(243, 23%, 24%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropbtn span {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: hsl(243, 27%, 20%);
+    border: 1px solid hotpink;
+    /* display: flex; */
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.dropdown-content h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-left: 8px;
+    color: hsl(250, 6%, 84%);
+}
+
+.temperature,
+.wind-speed,
+.precipitation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* border: 1px solid gold; */
+    padding: 7px;
+    gap: 8px;
+}
+
+.dropdown-content button {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    background-color: hsl(243, 23%, 30%);
+    border-radius: 5px;
+    color: hsl(255, 7%, 88%);
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.dropdown-content span {
+    color: hsl(250, 6%, 84%);
+}
+
+.search-form {
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 15px;
+    padding: 20px;
+    /* border: 1px solid yellowgreen; */
+}
+
+.search-form h1 {
+    /* border: 1px solid orchid; */
+    width: 330px;
+    font-size: 3.3rem;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding: 40px 0 40px 0;
+}
+
+.search-box {
+    position: relative;
+    /* border: 1px solid magenta; */
+}
+
+.search-input {
+    /* width: 100%; */
+    /* border-radius: 20px; */
+    /* border: none; */
+    background-color: hsl(243, 27%, 20%);
+    padding: 19px 19px 19px 60px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.search-input::placeholder {
+    color: hsl(240, 6%, 70%);
+}
+
+.search-input,
+.search-button {
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.search-button {
+    padding: 18px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: hsl(233, 67%, 56%);
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 1px;
+    /* margin-top: 15px; */
+}
+
+/* .current-weather {
+    border: 1px solid mediumslateblue;
+} */
+
+.current-weather {
+    border: 1px solid red;
+    background: rgb(40, 40, 66);
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+.weather-details {
+    border: 1px solid rgb(180, 244, 84);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* padding: 10px; */
+    flex-wrap: wrap;
+}
+
+.detail {
+    width: 190px;
+    height: 130px;
+    background-color: hsl(243, 23%, 24%);
+    border-radius: 18px;
+}

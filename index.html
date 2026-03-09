@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Weather app</title>
 </head>
 <body>
@@ -15,7 +16,6 @@
       <header class="header">
         <div class="logo">
           <img src="./assets/images/logo.svg" alt="logo">
-          <span>Weather Now</span>
         </div>
 
         <!-- dropdown -->
@@ -25,18 +25,21 @@
             <span>Units</span>
             <img src="./assets/images/icon-dropdown.svg" alt="">
           </button>
+          
           <div class="dropdown-content">
-            <h3>Switch to Imperial/Metric</h3>
+            <h3>Switch to Imperial</h3>
             <div class="temperature">
               <span>Temperature</span>
               <button type="button">Celsius (°C)</button>
               <button type="button">Fahrenheit (°F)</button>
             </div>
+            <hr>
             <div class="wind-speed">
               <span>Wind Speed</span>
               <button type="button">km/h</button>
               <button type="button">mph</button>
             </div>
+            <hr>
             <div class="precipitation">
               <span>Precipitation</span>
               <button type="button">Millimeters (mm)</button>
@@ -48,21 +51,24 @@
 
       <form class="search-form">
           <h1>How's the sky looking today?</h1>
-          
-          <input type="text" placeholder="Search for place..." name="city">
-          <button type="submit">Search</button>
+          <div class="search-box">
+              <img class="search-icon" src="./assets/images/icon-search.svg" alt="">
+              <input class="search-input" type="text" placeholder="Search for place..." name="city">
+          </div>
+
+          <button type="submit" class="search-button">Search</button>
       </form>
 
       <section class="current-weather">
 
           <div class="location-info">
-            <h2>Berlin, Germany</h2>
-            <p>Tuesday, Aug 5, 2025</p>
+            <!-- <h2>Berlin, Germany</h2> -->
+            <!-- <p>Tuesday, Aug 5, 2025</p> -->
           </div>
 
           <div class="temperature">
-            <img src="./assets/images/icon-sunny.webp" alt="Sunny weather">
-            <span class="temp">20°C</span>
+            <!-- <img src="./assets/images/icon-sunny.webp" alt="Sunny weather"> -->
+            <!-- <span class="temp">20°C</span> -->
           </div>
       </section>
 
@@ -70,34 +76,34 @@
 
         <div class="detail">
           <span>Feels Like</span>
-          <span>18°C</span>
+          <span>_</span>
         </div>
 
         <div class="detail">
           <span>Humidity</span>
-          <span>46°C</span>
+          <span>_</span>
         </div>
 
         <div class="detail">
           <span>Wind</span>
-          <span>14 km/h</span>
+          <span>_</span>
         </div>
 
         <div class="detail">
           <span>Precipitation</span>
-          <span>0 mm</span>
+          <span>_</span>
         </div>
       </section>
 
       <section class="daily-forecast">
         <h2>Daily Forecast</h2>
         <div class="day-card">
-          <time class="day">Tue</time>
-          <img src="./assets/images/icon-rain.webp" alt="">
+          <time class="day"></time>
+          <!-- <img src="./assets/images/icon-rain.webp" alt=""> -->
 
           <div class="temps">
-            <span>22°</span>
-            <span>16</span>
+            <span></span>
+            <span></span>
           </div>
         </div>
 
@@ -110,18 +116,20 @@
       </section>
 
       <section class="hourly-forecast">
-        <h2>Hourly Forecast</h2>
+        <!-- <h2>Hourly Forecast</h2> -->
         <div class="hourly-header">
             <div class="hourly-dropdown">
-              <button class="hourly-dropbtn">Menu</button>
+              <button class="hourly-dropbtn">- 
+                <img src="./assets/images/icon-dropdown.svg" alt="">
+              </button>
                 <div class="dropdown-content">
-                  <a href="">Monday</a>
-                  <a href="">Tuesday</a>
-                  <a href="">Wednesday</a>
-                  <a href="">Thursday</a>
-                  <a href="">Friday</a>
-                  <a href="">Saturday</a>
-                  <a href="">Sunday</a>
+                  <!-- <a href="">Monday</a> -->
+                  <!-- <a href="">Tuesday</a> -->
+                  <!-- <a href="">Wednesday</a> -->
+                  <!-- <a href="">Thursday</a> -->
+                  <!-- <a href="">Friday</a> -->
+                  <!-- <a href="">Saturday</a> -->
+                  <!-- <a href="">Sunday</a> -->
                 </div>
             </div> 
         </div>
