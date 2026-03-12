@@ -186,8 +186,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    /* padding: 10px; */
+    gap: 15px;
+    padding: 10px;
     flex-wrap: wrap;
 }
 
@@ -195,5 +195,75 @@
     width: 190px;
     height: 130px;
     background-color: hsl(243, 23%, 24%);
+    background-color: lightcoral;
     border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.detail span {
+    font-size: 1.2rem;
+    letter-spacing: 0.8;
+}
+
+.daily-forecast {
+    border: 1px solid rgb(153, 153, 252);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} 
+
+.daily-forecast h2 {
+    font-size: 1.6rem;
+}
+
+.cards {
+    border: 1px solid darkorange;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    gap: 15px;
+    padding: 10px;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.day-card {
+    /* border: 1px solid hotpink; */
+    padding: 10px;
+    width: 120px;
+    height: 190px;
+    border-radius: 15px;
+    background-color: #282842;
+}
+
+.hourly-forecast {
+    background-color: rgb(71, 47, 7);
+    display: flex;
+    gap: 10px;
+}
+
+.hourly-header {
+    border: 1px solid rgb(212, 198, 198);
+    margin-left: auto;
+}
+
+.hourly-dropdown {
+    background-color: red;
+}
+
+.hourly-dropbtn {
+    width: 120px;
+    padding: 7px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+    border: none;
+    background-color: #282842;
 }
